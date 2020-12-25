@@ -99,7 +99,7 @@ router.post('/addcar', upload.single('carImg'), (req, res) => {
                     foundUser.Cars.push(createdCar);
                     foundUser.save()
                         .then((u) => {
-                            res.redirect('/')
+                            res.redirect('/profile')
                         })
                 })
         })
